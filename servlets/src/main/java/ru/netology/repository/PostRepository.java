@@ -1,5 +1,6 @@
 package ru.netology.repository;
 
+import org.springframework.stereotype.Component;
 import ru.netology.model.Post;
 
 import java.util.*;
@@ -7,7 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicLong;
 
-// Stub
+@Component
 public class PostRepository {
 
   private Map<Long, Post> repository;
